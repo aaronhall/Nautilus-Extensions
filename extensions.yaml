@@ -1,0 +1,40 @@
+# extensions.yaml — which extensions install.sh links by default.
+#
+# CLI flags override this file:
+#   --only a,b    install just these (ignores this file entirely)
+#   --exclude c   subtract from this file's list
+#   --all         install every *.py in the repo (ignores this file)
+#   --config PATH use a different config file (e.g. per-machine lists)
+#   --no-config   ignore this file (same as --all, keeps --exclude working)
+#
+# Names may be written with or without the .py suffix, quoted or not.
+# Lines starting with # are comments. Unknown names warn and are skipped.
+
+version: 1
+
+install:
+  - annotate-image
+  - archive-browser
+  - column-browser
+  - compress-pdf
+  - create-link-to-clipboard
+  - cut-dim
+  # - deb-installer          # excluded: installs .deb packages (Debian/Ubuntu only)
+  - dim-incomplete-downloads
+  - dual-panel
+  - duration-column
+  - extensions-manager
+  - extract-here
+  - folder-color-revival
+  # - hidden-dim-all         # excluded: mutually exclusive with hidden-dim-icon (upstream: pick one)
+  - hidden-dim-icon
+  - merge-pdf
+  - nautilus_edit_ext
+  - preview-panel
+  - search-content
+  - video-to-audio
+  - watermark-pdf
+
+# Subtract from the list above without deleting lines (kept empty by default).
+exclude: []
+  # - dual-panel
