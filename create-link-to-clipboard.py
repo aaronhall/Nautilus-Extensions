@@ -40,7 +40,13 @@ import tempfile
 import time
 
 import gi
-gi.require_version("Nautilus", "4.0")
+# Prefer Nautilus 4.0, but accept what the host already loaded: newer
+# Nautilus (4.1 on GNOME 48+) preloads its namespace before extensions
+# import, and re-pinning it then raises ValueError and kills the load.
+try:
+    gi.require_version("Nautilus", "4.0")
+except ValueError:
+    pass
 gi.require_version("Gtk", "4.0")
 from gi.repository import Nautilus, GObject, Gdk, GLib, Gio
 
