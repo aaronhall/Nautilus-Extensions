@@ -9,7 +9,7 @@ kept installable without Ubuntu's PPA/apt. Upstream files are left untouched so
 | `install.sh` | symlink installer (no apt), respects `disabled/` |
 | `extensions.yaml` | default extension set (edit to include/exclude) |
 | `FEDORA.md` | this file |
-| `create-link-to-clipboard.py` | own extension (candidate for upstream PR) |
+| `create-link-in-clipboard.py` | own extension (candidate for upstream PR) |
 | `dim-incomplete-downloads.py` | own extension (candidate for upstream PR) |
 
 ## Install on Fedora
@@ -54,7 +54,7 @@ re-linked. `nautilus -q` closes open Files windows; use `--no-restart` to skip.
 
 | Extension | Description |
 |---|---|
-| `create-link-to-clipboard.py` | Right-click → "Create Link in Clipboard": absolute `Link to <name>` symlinks staged in `/tmp/nautilus-links-*/`, placed on the clipboard as COPY so paste copies the link (repeatable). Prunes staging dirs older than 7 days. |
+| `create-link-in-clipboard.py` | Right-click → "Create Link in Clipboard": absolute `Link to <name>` symlinks staged in `/tmp/nautilus-links-*/`, placed on the clipboard as COPY so paste copies the link (repeatable). Prunes staging dirs older than 7 days. |
 | `dim-incomplete-downloads.py` | Dims `*.!qB` qBittorrent partials to 0.35 opacity via a 750 ms view walk. Technique adapted from upstream's hidden-dim extensions. |
 
 Both carry `SPDX-License-Identifier: GPL-3.0-or-later` to match upstream's LICENSE.

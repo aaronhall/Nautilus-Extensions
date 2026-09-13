@@ -24,7 +24,7 @@
 #   clipboard as a COPY operation, so pasting copies the links (repeatable)
 # REQUIRES: python3-nautilus
 # INSTALL:
-#   cp create-link-to-clipboard.py ~/.local/share/nautilus-python/extensions/
+#   cp create-link-in-clipboard.py ~/.local/share/nautilus-python/extensions/
 #   nautilus -q
 #
 # For each selected file/dir, create an absolute symlink inside a fresh

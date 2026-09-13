@@ -17,7 +17,7 @@ install:
   - archive-browser
   - column-browser
   - compress-pdf
-  - create-link-to-clipboard
+  - create-link-in-clipboard
   - cut-dim
   # - deb-installer          # excluded: installs .deb packages (Debian/Ubuntu only)
   - dim-incomplete-downloads
